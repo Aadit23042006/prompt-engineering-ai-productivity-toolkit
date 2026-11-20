@@ -1,0 +1,27 @@
+Local Automated Test Run
+=======================
+
+Command:
+python -m unittest discover -s tests -v
+
+Environment note:
+The execution environment emitted an unrelated spreadsheet-runtime startup traceback before unittest began.
+That startup message is not produced by this project. The unittest suite ran successfully.
+
+Test results:
+test_classifier (test_toolkit.ToolkitTests.test_classifier) ... ok
+test_debug_template (test_toolkit.ToolkitTests.test_debug_template) ... ok
+test_evaluation (test_toolkit.ToolkitTests.test_evaluation) ... ok
+test_few_shot (test_toolkit.ToolkitTests.test_few_shot) ... ok
+test_json (test_toolkit.ToolkitTests.test_json) ... ok
+test_prompt_sections (test_toolkit.ToolkitTests.test_prompt_sections) ... ok
+test_summary (test_toolkit.ToolkitTests.test_summary) ... ok
+test_workflow_templates (test_toolkit.ToolkitTests.test_workflow_templates) ... ok
+test_zero_shot (test_toolkit.ToolkitTests.test_zero_shot) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK
+
+Exit code: 0

@@ -1,0 +1,36 @@
+{
+  "zero_shot": {
+    "task": "Classify the review sentiment.",
+    "input": "The delivery was fast and the product is excellent.",
+    "prompt": "You are a sentiment classifier. Return exactly one label: positive, negative, or neutral."
+  },
+  "few_shot": {
+    "task": "Classify sentiment using examples.",
+    "examples": [
+      {
+        "input": "I loved the service.",
+        "output": "positive"
+      },
+      {
+        "input": "The package arrived late.",
+        "output": "negative"
+      }
+    ],
+    "new_input": "The product works as expected.",
+    "expected_format": "one label"
+  },
+  "structured_json": {
+    "prompt": "Extract name, role, and skills from the supplied text. Return valid JSON only.",
+    "input": "Sam is a data analyst who uses SQL and Python.",
+    "schema": {
+      "name": "string",
+      "role": "string",
+      "skills": "array"
+    }
+  },
+  "coding_debug": {
+    "code": "def divide(a, b):\\n    return a / b",
+    "error": "ZeroDivisionError when b=0",
+    "expected": "Handle zero safely and explain the change."
+  }
+}
